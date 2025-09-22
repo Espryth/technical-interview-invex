@@ -35,7 +35,7 @@ public class EmployeeController {
     return Responses.ok(this.employeeService.searchEmployees(name, lastName, secondLastName));
   }
 
-  @GetMapping
+  @GetMapping("/all")
   ResponseEntity<Response> getAllEmployees() {
     return Responses.ok(this.employeeService.getAllEmployees());
   }
